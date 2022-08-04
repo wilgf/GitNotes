@@ -9,6 +9,7 @@
 | git clone repo_url                            | Clone public repository                                               |
 | git clone ssh://git@github.com/[username]/[repository-name].git | Clone private repository                            |
 | git status                                    | Check status                                                          |
+| git status -sbu                               | Check status with concise, branch info, and untracked file details    |
 | git add [file-name]                           | Add a file to the staging area                                        |
 | git add -A                                    | Add all new and changed files to the staging area                     |
 | git commit -m "[commit message]"              | Commit changes                                                        |
@@ -25,6 +26,7 @@
 | git checkout [branch name]                    | Switch to a branch                                                    |
 | git checkout -                                | Switch to the branch last checked out                                 |
 | git checkout -- [file-name.txt]               | Discard changes to a file                                             |
+| git fetch origin [branch name]                | Download commits, files, and refs from a remote repository into your local repo |	    
 | git merge [branch name]                       | Merge a branch into the active branch                                 |
 | git merge [source branch] [target branch]     | Merge a branch into a target branch                                   |
 | git stash                                     | Stash changes in a dirty working directory                            |
