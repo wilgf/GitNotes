@@ -6,19 +6,19 @@
 
 ---
 
-| Create and Clone                                                | Desc                                                                  |
+| Create and Clone &nbsp; &nbsp; &nbsp; &nbsp;                    | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git init                                                        | Initialize a local Git repository                                     |
 | git clone repo_url                                              | Clone public repository                                               |
 
-| Add and Remove                                                  | Desc                                                                  |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add and Remove &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git add [file-name]                                             | Add a file to the staging area                                        |
 | git add -A                                                      | Add all new and changed files to the staging area                     |
 | git rm -r [file-name.txt]                                       | Remove a file (or folder)                                             |
 | git commit -m "[commit message]"                                | Commit changes                                                        |
 
-| Audit and Analyze                                               | Desc                                                                  |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Audit and Analyze &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git status                                                      | Check status                                                          |
 | git status -sbu                                                 | Check status with concise, branch info, and untracked file details    |
@@ -31,7 +31,7 @@
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git revert commitid                                             | Revert commit changes                                                 |
 
-| Synchronize                                                     | Desc                                                                  |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Synchronize &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git fetch origin [branch name]                                  | Download commits, files, and refs from a remote repository into your local repo |	    
 | git pull                                                        | Update local repository to the newest commit                          |
@@ -65,18 +65,17 @@
 
 | Remotes                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
-| git remote add origin ssh://git@github.com/[username]/[repository-name].git | Add a remote repository                                   |
-| git remote set-url origin ssh://git@github.com/[username]/[repository-name].git | Set a repository's origin branch to SSH               |
+| git remote add origin [url]                                     | Add a remote repository                                               |
+| git remote set-url origin [url]                                 | Set a repository's origin branch to SSH                               |
 
 | Configure                                                       | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git config --global user.name "your_username"                   | Set globally Username                                                 |
-| git config --global user.email "your_email_address@example.com" | Set globally Email id                                                 |
+| git config --global user.email "sample@gmail.com"               | Set globally Email id                                                 |
 | git config --global --list                                      | Get global config                                                     |
 
-                        
-
 ---
+
 ## References
 
 [Git Commands - LoginRadius](https://www.loginradius.com/blog/engineering/git-commands)
