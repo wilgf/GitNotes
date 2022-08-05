@@ -104,4 +104,3 @@ To maximize effectiveness of the list below, I recommend you add them to your gi
 ## References
 
 [Git Commands - Git-Scm](https://www.git-scm.com)
-
