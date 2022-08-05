@@ -1,13 +1,13 @@
 # The Engineer’s Corner - GIT CheatSheet
 
-Author:  William FitzPatrick  
-Date:    Aug 04 2022  
+Author: &nbsp; William FitzPatrick  
+Date:&nbsp;  &nbsp; &nbsp; Aug 04 2022  
 Version: 1.017  
 
 ## Introduction
 
-- I list below many of the most common commands in GIT
-- To maximize effectiveness of the list below, add them to your .gitconfig Alias list
+I list below many of the most common commands in GIT  
+To maximize effectiveness of the list below, I recommend you add them to your gitconfig aliases
 
 ---
 
@@ -59,7 +59,7 @@ Version: 1.017
 | git stash                                                       | Stash changes in a dirty working directory                            |
 | git stash clear                                                 | Remove all stashed entries                                            |
 
-## Branches
+## Branch
 
 | Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -75,14 +75,16 @@ Version: 1.017
 | git checkout -                                                  | Switch to the branch last checked out                                 |
 | git checkout -- [file-name.txt]                                 | Discard changes to a file                                             |
 
-## Merges
+## Merge
 
 | Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git merge [branch name]                                         | Merge a branch into the active branch                                 |
 | git merge [source branch] [target branch]                       | Merge a branch into a target branch                                   |
+| git rebase origin/master --ff-only                              | Merge a pending changes in origin master into your local master                                   |
 
-## Remotes
+
+## Remote
 
 | Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
