@@ -1,24 +1,35 @@
+# The Engineer’s Corner - GIT CheatSheet
 
-# Git Commands List
+Author:  William FitzPatrick  
+Date:    Aug 04 2022  
+Version: 1.017  
+
+## Introduction
 
 - I list below many of the most common commands in GIT
 - To maximize effectiveness of the list below, add them to your .gitconfig Alias list
 
 ---
 
-| Create and Clone &nbsp; &nbsp; &nbsp; &nbsp;                    | Desc                                                                  |
+## Create and Clone
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git init                                                        | Initialize a local Git repository                                     |
 | git clone repo_url                                              | Clone public repository                                               |
 
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add and Remove &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Desc                                                                  |
+## Add and Remove
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git add [file-name]                                             | Add a file to the staging area                                        |
 | git add -A                                                      | Add all new and changed files to the staging area                     |
 | git rm -r [file-name.txt]                                       | Remove a file (or folder)                                             |
-| git commit -m "[commit message]"                                | Commit changes                                                        |
+| git commit -m "[commit message]"                                | Commit changes             
 
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Audit and Analyze &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Desc                                                                  |
+## Audit and Analyze                                          
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git status                                                      | Check status                                                          |
 | git status -sbu                                                 | Check status with concise, branch info, and untracked file details    |
@@ -27,11 +38,15 @@
 | git log --oneline                                               | View changes (briefly)                                                |
 | git diff [source branch] [target branch]                        | Preview changes before merging                                        |
 
-| Undo and Restore                                                | Desc                                                                  |
+## Undo and Restore  
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git revert commitid                                             | Revert commit changes                                                 |
 
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Synchronize &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Desc                                                                  |
+## Synchronize
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git fetch origin [branch name]                                  | Download commits, files, and refs from a remote repository into your local repo |	    
 | git pull                                                        | Update local repository to the newest commit                          |
@@ -44,7 +59,9 @@
 | git stash                                                       | Stash changes in a dirty working directory                            |
 | git stash clear                                                 | Remove all stashed entries                                            |
 
-| Branches                                                        | Desc                                                                  |
+## Branches
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git branch                                                      | List of branches (the asterisk denotes the current branch)            |
 | git branch -a                                                   | List all branches (local and remote)                                  |
@@ -58,17 +75,23 @@
 | git checkout -                                                  | Switch to the branch last checked out                                 |
 | git checkout -- [file-name.txt]                                 | Discard changes to a file                                             |
 
-| Merges                                                          | Desc                                                                  |
+## Merges
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git merge [branch name]                                         | Merge a branch into the active branch                                 |
 | git merge [source branch] [target branch]                       | Merge a branch into a target branch                                   |
 
-| Remotes                                                         | Desc                                                                  |
+## Remotes
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git remote add origin [url]                                     | Add a remote repository                                               |
 | git remote set-url origin [url]                                 | Set a repository's origin branch to SSH                               |
 
-| Configure                                                       | Desc                                                                  |
+## Configure
+
+| Command                                                         | Desc                                                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------|
 | git config --global user.name "your_username"                   | Set globally Username                                                 |
 | git config --global user.email "sample@gmail.com"               | Set globally Email id                                                 |
