@@ -103,4 +103,5 @@ To maximize effectiveness of the list below, I recommend you add them to your gi
 
 ## References
 
-[Git Commands - LoginRadius](https://www.loginradius.com/blog/engineering/git-commands)
+[Git Commands - Git-Scm](https://www.git-scm.com)
+
