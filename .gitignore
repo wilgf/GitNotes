@@ -398,3 +398,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/CheatSheets/GitSheet_files/widget.prod.min.js.download
+/CheatSheets/GitSheet_files/style.css
+/CheatSheets/GitSheet_files/saved_resource.html
+/CheatSheets/GitSheet_files/js
+/CheatSheets/GitSheet_files/css
+/CheatSheets/GitSheet_files/copy.js.download
+/CheatSheets/GitSheet_files/coffee cup.svg
+/CheatSheets/GitSheet_files/bootstrap.min.css
+/CheatSheets/GitSheet_files/analytics.js.download
