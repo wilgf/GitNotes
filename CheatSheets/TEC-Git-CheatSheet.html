@@ -1667,7 +1667,7 @@ details</td>
 </tr>
 <tr class="even">
 <td>git checkout [commitid]</td>
-<td>View a previous commit</td>
+<td>View a previous commit [commitid]</td>
 </tr>
 <tr class="odd">
 <td>git reflog</td>
@@ -1692,25 +1692,27 @@ details</td>
 <tbody>
 <tr class="odd">
 <td>git reset [commitid]</td>
-<td>Resets to [commitid], rather than to HEAD, the default</td>
+<td>Move the HEAD backward to [commitid], rather than to HEAD, the
+default</td>
 </tr>
 <tr class="even">
 <td>git reset –soft</td>
-<td>Resets the HEAD, leaves all your staged and working files as is</td>
+<td>Move the HEAD backward <n> commit, leaves all your staged and
+working files as is</td>
 </tr>
 <tr class="odd">
 <td>git reset –mixed</td>
-<td>Resets the HEAD and your staged files, but not the working
-directory</td>
+<td>Move the HEAD backward <n> commit, resets your staged files to <n>
+commit, but not the working directory</td>
 </tr>
 <tr class="even">
 <td>git reset –hard</td>
-<td>Resets the HEAD, your staged files, and working directory to mach
-the most recent commit</td>
+<td>Move the HEAD backward <n> commit, resets your staged files, and
+working directory to <n> commit</td>
 </tr>
 <tr class="odd">
 <td>git revert [commitid]</td>
-<td>Revert commit changes</td>
+<td>Undo [commitid] by applying a new commit</td>
 </tr>
 <tr class="even">
 <td>git clean -df</td>
