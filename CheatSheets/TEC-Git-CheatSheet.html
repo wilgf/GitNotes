@@ -12,7 +12,7 @@
 <meta name="author" content="The Software Engineer’s Corner" />
 
 
-<title>GIT Porcelain CheatSheet</title>
+<title>GIT CheatSheet</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1509,7 +1509,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">GIT Porcelain CheatSheet</h1>
+<h1 class="title toc-ignore">GIT CheatSheet</h1>
 <h4 class="author">The Software Engineer’s Corner</h4>
 <h4 class="date">Aug 08 2022</h4>
 
@@ -2017,6 +2017,55 @@ commit</td>
 <tr class="odd">
 <td>git config –global –list</td>
 <td>Get global config</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="plumbing" class="section level2">
+<h2>Plumbing</h2>
+<table>
+<colgroup>
+<col width="40%" />
+<col width="59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>git cat-file [type] [object-id]</td>
+<td>Display the specified object, where <type> is one of commit, tree,
+blob, or tag</td>
+</tr>
+<tr class="even">
+<td>git cat-file -t [object-id]</td>
+<td>Output the type of the specified object</td>
+</tr>
+<tr class="odd">
+<td>git ls-tree [tree-id]</td>
+<td>Display a pretty version of the specified tree object</td>
+</tr>
+<tr class="even">
+<td>git gc</td>
+<td>Perform a garbage collection on the object database</td>
+</tr>
+<tr class="odd">
+<td>git update-index [–add] [file]</td>
+<td>Stage the specified file, using the optional –add flag to denote a
+new untracked file</td>
+</tr>
+<tr class="even">
+<td>git write-tree</td>
+<td>Generate a tree from the index and store it in the object database.
+Returns the ID of the new tree object</td>
+</tr>
+<tr class="odd">
+<td>git commit-tree [tree-id] -p [parent-id]</td>
+<td>Create a new commit object from the given tree object and parent
+commit. Returns the ID of the new commit object.</td>
 </tr>
 </tbody>
 </table>
