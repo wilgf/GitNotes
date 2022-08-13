@@ -1516,8 +1516,8 @@ div.tocify {
 </div>
 
 
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
 <ul>
 <li>I list many of the most common Git porcelain commands below</li>
 <li>To maximize effectiveness of these commands, add them to your
@@ -1525,6 +1525,8 @@ div.tocify {
 </ul>
 <hr />
 </div>
+<div id="commands" class="section level1">
+<h1>Commands</h1>
 <div id="creates-and-clones" class="section level2">
 <h2>Creates and Clones</h2>
 <table>
@@ -2074,9 +2076,70 @@ commit. Returns the ID of the new commit object.</td>
 </table>
 <hr />
 </div>
-<div id="references" class="section level2">
-<h2>References</h2>
-<p><a href="https://www.git-scm.com">Git Commands - Git-Scm</a></p>
+</div>
+<div id="terms-and-concepts" class="section level1">
+<h1>Terms and Concepts</h1>
+<p><strong>Branch</strong>: A “branch” is a line of development. The
+most recent commit on a branch is referred to as the tip of that branch.
+The tip of the branch is referenced by a branch head, which moves
+forward as additional development is done on the branch. A single Git
+repository can track an arbitrary number of branches, but your working
+tree is associated with just one of them (the “current” or “checked out”
+branch), and HEAD points to that branch.</p>
+<p><strong>Cache</strong>: See <em>index</em> below</p>
+<p><strong>Commit</strong>: A single point in the Git history; the
+entire history of a project is represented as a set of interrelated
+commits. The word “commit” is often used by Git in the same places other
+revision control systems use the words “revision” or “version”. Also
+used as a short hand for commit object.</p>
+<p><strong>Detached HEAD</strong>: Normally the HEAD stores the name of
+a branch, and commands that operate on the history HEAD represents
+operate on the history leading to the tip of the branch the HEAD points
+at. However, Git also allows you to check out an arbitrary commit that
+isn’t necessarily the tip of any particular branch. The HEAD in such a
+state is called “detached”.</p>
+<p>Note that commands that operate on the history of the current branch
+(e.g. git commit to build a new history on top of it) still work while
+the HEAD is detached. They update the HEAD to point at the tip of the
+updated history without affecting any branch. Commands that update or
+inquire information about the current branch (e.g. git branch
+–set-upstream-to that sets what remote-tracking branch the current
+branch integrates with) obviously do not work, as there is no (real)
+current branch to ask about in this state.</p>
+<p><strong>Fast-forward</strong>: A fast-forward is a special type of
+merge where you have a revision and you are “merging” another branch’s
+changes that happen to be a descendant of what you have. In such a case,
+you do not make a new merge commit but instead just update your branch
+to point at the same revision as the branch you are merging. This will
+happen frequently on a remote-tracking branch of a remote
+repository.</p>
+<p><strong>HEAD</strong>: The current branch. In more detail: Your
+working tree is normally derived from the state of the tree referred to
+by HEAD. HEAD is a reference to one of the heads in your repository,
+except when using a detached HEAD, in which case it directly references
+an arbitrary commit.</p>
+<p><strong>Index</strong>: A collection of files that represent the
+stored/saved version of your working tree. Most commonly referred to as
+the staging area.</p>
+<p><strong>Ref</strong>: A name that begins with refs/
+(e.g. refs/heads/master) that points to an object name or another ref
+(the latter is called a symbolic ref). For convenience, a ref can
+sometimes be abbreviated when used as an argument to a Git command; see
+gitrevisions[7] for details. Refs are stored in the repository.</p>
+<p><strong>Tag</strong>: An object containing a ref pointing to another
+object, which can contain a message just like a commit object. It can
+also contain a (PGP) signature, in which case it is called a “signed tag
+object”.</p>
+<p><strong>Tree</strong>: An object containing a list of file names and
+modes along with refs to the associated blob and/or tree objects. A tree
+is equivalent to a directory.</p>
+<hr />
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.git-scm.com">Git Homepage</a></li>
+</ol>
 </div>
 
 
