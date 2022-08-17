@@ -1835,6 +1835,11 @@ local repo</td>
 <td>git checkout – [file-name.txt]</td>
 <td>Discard changes to a file</td>
 </tr>
+<tr class="even">
+<td>git switch [branch name]</td>
+<td>Set working directory and HEAD to [branch name], preserve working
+dir changes</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2088,12 +2093,12 @@ improvements, or new business application features.</p>
 history. Commit <em>operations</em> store the current contents of the
 index in a new commit along with a log message from the user describing
 the changes.</p>
-<p><strong>Detached HEAD</strong>: Normally the HEAD refers to the tip
-of your current branch. In Git, however, you can check out an arbitrary
-commit that isn’t necessarily the tip of any particular branch. The HEAD
-in such a state is called “detached”. To return your repo state to
-normal state use git switch command. This will set HEAD back to teh tip
-of whatever branch you switch to.</p>
+<p><strong>Detached HEAD</strong>: Normally, in Git, the HEAD refers to
+the tip of your current branch. In Git, however, you can check out an
+arbitrary commit that isn’t necessarily the tip of any particular
+branch. The HEAD in such a state is called “detached”. To return your
+repo state to normal state, use git switch command. This will set HEAD
+back to the tip of whatever branch you switch to.</p>
 <p><strong>Fast-forward</strong>: A fast-forward is a special type of
 merge where you have a revision and you are “merging” another branch’s
 changes that happen to be a descendant of what you have. In such a case,
@@ -2106,10 +2111,9 @@ current branch.</p>
 <p><strong>Index</strong>: A cache the stored/saved files of your
 working tree before they are committed. Most commonly referred to as the
 staging area.</p>
-<p><strong>Merge</strong>: The joining two or more commit histories</p>
-<p><strong>Ref</strong>: A name that begins with refs/
-(e.g. refs/heads/master) that points to an object name or another ref
-(the latter is called a symbolic ref). For convenience, a ref can
+<p><strong>Merge</strong>: Joining two or more commit histories.</p>
+<p><strong>Ref</strong>: A SHA1 reference to an object name or another
+ref (the latter is called a symbolic ref). For convenience, a ref can
 sometimes be abbreviated when used as an argument to a Git command; see
 gitrevisions[7] for details. Refs are stored in the repository.</p>
 <p><strong>Tag</strong>: An object containing a ref pointing to another
