@@ -1511,7 +1511,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">GIT CheatSheet</h1>
 <h4 class="author">The Software Engineer’s Corner</h4>
-<h4 class="date">Aug 12 2022</h4>
+<h4 class="date">Aug 17 2022</h4>
 
 </div>
 
@@ -2079,33 +2079,21 @@ commit. Returns the ID of the new commit object.</td>
 </div>
 <div id="terms-and-concepts" class="section level1">
 <h1>Terms and Concepts</h1>
-<p><strong>Branch</strong>: A “branch” is a line of development. The
-most recent commit on a branch is referred to as the tip of that branch.
-The tip of the branch is referenced by a branch head, which moves
-forward as additional development is done on the branch. A single Git
-repository can track an arbitrary number of branches, but your working
-tree is associated with just one of them (the “current” or “checked out”
-branch), and HEAD points to that branch.</p>
+<p><strong>Branch</strong>: A branch is a line of development that
+diverges from the main working project. Developers create branches to
+explore experimental changes, bug fixes for users, minor topical
+improvements, or new business application features.</p>
 <p><strong>Cache</strong>: See <em>index</em> below</p>
-<p><strong>Commit</strong>: A single point in the Git history; the
-entire history of a project is represented as a set of interrelated
-commits. The word “commit” is often used by Git in the same places other
-revision control systems use the words “revision” or “version”. Also
-used as a short hand for commit object.</p>
-<p><strong>Detached HEAD</strong>: Normally the HEAD stores the name of
-a branch, and commands that operate on the history HEAD represents
-operate on the history leading to the tip of the branch the HEAD points
-at. However, Git also allows you to check out an arbitrary commit that
-isn’t necessarily the tip of any particular branch. The HEAD in such a
-state is called “detached”.</p>
-<p>Note that commands that operate on the history of the current branch
-(e.g. git commit to build a new history on top of it) still work while
-the HEAD is detached. They update the HEAD to point at the tip of the
-updated history without affecting any branch. Commands that update or
-inquire information about the current branch (e.g. git branch
-–set-upstream-to that sets what remote-tracking branch the current
-branch integrates with) obviously do not work, as there is no (real)
-current branch to ask about in this state.</p>
+<p><strong>Commit</strong>: A commit is a single point in the Git
+history. Commit <em>operations</em> store the current contents of the
+index in a new commit along with a log message from the user describing
+the changes.</p>
+<p><strong>Detached HEAD</strong>: Normally the HEAD refers to the tip
+of your current branch. In Git, however, you can check out an arbitrary
+commit that isn’t necessarily the tip of any particular branch. The HEAD
+in such a state is called “detached”. To return your repo state to
+normal state use git switch command. This will set HEAD back to teh tip
+of whatever branch you switch to.</p>
 <p><strong>Fast-forward</strong>: A fast-forward is a special type of
 merge where you have a revision and you are “merging” another branch’s
 changes that happen to be a descendant of what you have. In such a case,
@@ -2113,14 +2101,12 @@ you do not make a new merge commit but instead just update your branch
 to point at the same revision as the branch you are merging. This will
 happen frequently on a remote-tracking branch of a remote
 repository.</p>
-<p><strong>HEAD</strong>: The current branch. In more detail: Your
-working tree is normally derived from the state of the tree referred to
-by HEAD. HEAD is a reference to one of the heads in your repository,
-except when using a detached HEAD, in which case it directly references
-an arbitrary commit.</p>
-<p><strong>Index</strong>: A collection of files that represent the
-stored/saved version of your working tree. Most commonly referred to as
-the staging area.</p>
+<p><strong>HEAD</strong>: A pointer to the most recent commit on the
+current branch.</p>
+<p><strong>Index</strong>: A cache the stored/saved files of your
+working tree before they are committed. Most commonly referred to as the
+staging area.</p>
+<p><strong>Merge</strong>: The joining two or more commit histories</p>
 <p><strong>Ref</strong>: A name that begins with refs/
 (e.g. refs/heads/master) that points to an object name or another ref
 (the latter is called a symbolic ref). For convenience, a ref can
