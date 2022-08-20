@@ -1900,9 +1900,13 @@ operation</td>
 <td>Interactive rebase and select actions for each commit</td>
 </tr>
 <tr class="even">
-<td>git rebase origin/master</td>
-<td>Move the current branches commits to the tip of the remote
+<td>git rebase origin/master master</td>
+<td>Move the local master’s commits to the tip of the remote master
 branch</td>
+</tr>
+<tr class="odd">
+<td>git rebase [branch base] [branch new tip]</td>
+<td>Move [new branch tip] commits to the tip of [branch base]</td>
 </tr>
 </tbody>
 </table>
