@@ -1776,9 +1776,70 @@ local repo</td>
 <td>Delete a remote branch</td>
 </tr>
 <tr class="odd">
-<td>git push –force [remote] [branch]</td>
+<td>git push –force [remote] [branch name]</td>
 <td>Push local changes to remote branch, overwrite remote history -
 DANGEROUS</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tags" class="section level2">
+<h2>Tags</h2>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>git tag</td>
+<td>List all tags</td>
+</tr>
+<tr class="even">
+<td>git tag -a [tag name] -m [message]</td>
+<td>Add a tag [tag name] locally</td>
+</tr>
+<tr class="odd">
+<td>git tag -a [tag name] -m [message] [commitid]</td>
+<td>Add a tag [tag name] at Specific Commit</td>
+</tr>
+<tr class="even">
+<td>git tag -d [tag name]</td>
+<td>Delete a local tag</td>
+</tr>
+<tr class="odd">
+<td>git tag -f -a [tag name] -m [message]</td>
+<td>Redo a local tag</td>
+</tr>
+<tr class="even">
+<td>git describe –tags –abbrev=0</td>
+<td>Describe latest tag</td>
+</tr>
+<tr class="odd">
+<td>git push –tags [remote name]</td>
+<td>Update [remote name] with all tags of current local branch</td>
+</tr>
+<tr class="even">
+<td>git push origin [tag name]</td>
+<td>Push a tag to origin</td>
+</tr>
+<tr class="odd">
+<td>git push origin –tags</td>
+<td>Push all local tags to remote</td>
+</tr>
+<tr class="even">
+<td>git push origin :refs/tags/TAG</td>
+<td>Delete a tag on origin</td>
+</tr>
+<tr class="odd">
+<td>git show-ref –tags</td>
+<td>List tags as references</td>
 </tr>
 </tbody>
 </table>
